@@ -10,9 +10,9 @@ name.addEventListener('click', () => {
 
 
 
-let logo = document.querySelector('#logo')
+const image = document.querySelector('#logo')
+const input = document.querySelector('input')
 
-logo.addEventListener('click', () => {
-    let newLogo = prompt('Entrez le chemin de la nouvelle photo:')
-    logo.src = newLogo
+input.addEventListener('change', (e) => {
+    image.src = URL.createObjectURL(e.target.files[0])
 })
