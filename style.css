@@ -119,3 +119,33 @@ body {
     font-size: 12px;
     color: hsl(227, 10%, 46%);
 }
+
+
+@media (min-width: 2030px) {
+    .card {
+        width: 480px;
+    }
+
+    #logo {
+        width: 144px;
+        height: 144px;
+        margin-top: -72px;
+    }
+
+    .card h1 {
+        font-size: 27px;
+    }
+
+    #city {
+        font-size: 22.5px;
+    }
+
+    .stats h3 {
+        font-size: 27px;
+    }
+
+    .stats p {
+        font-size: 18px;
+    }
+
+}
