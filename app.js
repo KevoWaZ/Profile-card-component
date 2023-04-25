@@ -1,11 +1,11 @@
-let name = document.querySelector('.card h1')
-let age = document.querySelector('.card span')
+let name = document.querySelector('.text h1')
+let age = document.querySelector('.text span')
 
 name.addEventListener('click', () => {
-    let nom = prompt('entrez votre nom')
-    name.firstChild.textContent = nom
+    let newName = prompt('entrez votre nom et prénom')
+    name.firstChild.textContent = newName
     let newAge = prompt('Entrez votre age')
-    age.lastChild.textContent =  newAge
+    age.lastChild.textContent = newAge
 })
 
 
