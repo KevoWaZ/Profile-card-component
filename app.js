@@ -15,15 +15,18 @@ const name = document.querySelector('.text h1');
 const age = document.querySelector('.text span');
 const image = document.querySelector('#logo');
 const input = document.querySelector('input');
+const city = document.querySelector('#city');
 
 window.onload = () => {
     // Vérifier s'il y a des données stockées pour le nom, l'âge et l'image
     const storedName = localStorage.getItem('name');
     const storedAge = localStorage.getItem('age');
     const storedImage = localStorage.getItem('image');
+    const storedCity = localStorage.getItem('city');
     if (storedName && storedAge) {
         name.firstChild.textContent = storedName;
         age.lastChild.textContent = storedAge;
+	city.textContent = storedCity;
     }
     if (storedImage) {
         image.src = storedImage;
@@ -33,14 +36,17 @@ window.onload = () => {
     name.addEventListener('click', () => {
         const newName = prompt('Entrez votre nom et prénom');
         const newAge = prompt('Entrez votre âge');
+	const newCity = prompt('Entrez votre ville');
 
         // Vérifier si le nom et l'âge ont été saisis avant de mettre à jour le contenu et de stocker les nouvelles valeurs
         if (newName && newAge) {
             name.firstChild.textContent = newName;
             age.lastChild.textContent = newAge;
+	    city.textContent = newCity;
 
             localStorage.setItem('name', newName);
             localStorage.setItem('age', newAge);
+	    localStorage.setItem('city', newCity);
         }
     });
 

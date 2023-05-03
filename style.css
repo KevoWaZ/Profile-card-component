@@ -72,10 +72,10 @@ body {
 
 
 #logo {
-    width: 96px;
-    height: 96px;
+    width: 122px;
+    height: 122px;
     object-fit: cover;
-    margin-top: -52px;
+    margin-top: -65px;
     border-radius: 50%;
     border: 4px solid #fff;
     cursor: pointer;
@@ -153,10 +153,14 @@ form {
     }
 
     #logo {
-        width: 144px;
-        height: 144px;
-        margin-top: -80px;
+        width: 196px;
+        height: 196px;
+        margin-top: -102px;
     }
+
+    .label-file {
+    	font-size: 22px;
+}
 
     .card h1 {
         font-size: 27px;
